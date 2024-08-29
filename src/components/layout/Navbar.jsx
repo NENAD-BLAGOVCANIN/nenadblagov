@@ -1,53 +1,57 @@
 import React from 'react'
 import logo from '../../assets/img/logo.png'
 import { Link, NavLink } from 'react-router-dom'
-import { Moon, MoonFill, Sun, SunFill } from 'react-bootstrap-icons'
+import { MoonFill, SunFill } from 'react-bootstrap-icons'
 
-function Navbar() {
+function Navbar({ darkMode, toggleDarkMode }) {
     return (
-        <nav class="navbar navbar-expand-lg bg-transparent justify-content-center">
-            <button class="navbar-toggler btn bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <nav className="navbar navbar-expand-lg bg-transparent justify-content-center">
+            <button className="navbar-toggler btn bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-white"></span>
+                <span className="navbar-toggler-icon text-white"></span>
             </button>
-            <div class="collapse navbar-collapse">
-                <ul class="container navbar-nav m-auto justify-content-between w-100">
+            <div className="collapse navbar-collapse">
+                <ul className="container navbar-nav m-auto justify-content-between w-100">
                     <li>
-                        <Link class="d-flex align-items-center h-100 logo-image-wrapper" to="/">
-                            <img id="logo-image" src={logo} alt="" />
+                        <Link className="d-flex align-items-center h-100 logo-image-wrapper" to="/">
+                            <img id="logo-image" src={logo} alt="Logo" />
                         </Link>
                     </li>
 
                     <div className='navbar-nav'>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link" to="/">Home</NavLink>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link" to="/work">My Work</NavLink>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link" to="/contact">Contact</NavLink>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link" to="/about">About</NavLink>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <NavLink className="nav-link" to="/cv">CV</NavLink>
                         </li>
                     </div>
 
-                    <div class="nav-item nav-link position-relative d-flex align-items-center">
-                        <div class="one-quarter" id="switch">
-                            <input type="checkbox" class="checkbox" id="chk" />
-                            <label class="label" for="chk">
+                    <div className="nav-item nav-link position-relative d-flex align-items-center">
+                        <div className="one-quarter" id="switch">
+                            <input 
+                                type="checkbox" 
+                                className="checkbox" 
+                                id="chk" 
+                                checked={darkMode} 
+                                onChange={toggleDarkMode} 
+                            />
+                            <label className="label" htmlFor="chk">
                                 <MoonFill className='moon' />
                                 <SunFill className='sun' />
-                                <div class="ball"></div>
+                                <div className="ball"></div>
                             </label>
                         </div>
                     </div>
-
-
                 </ul>
             </div>
         </nav>

@@ -4,13 +4,13 @@ import Navbar from '../../components/layout/Navbar'
 import Footer from '../../components/layout/Footer'
 import styles from './Home.module.css'
 
-function Home() {
+function Home({ darkMode, toggleDarkMode }) {
     return (
         <>
 
             <div className={styles.homeMainWrapper}>
 
-                <Navbar />
+                <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
                 <div class="container pt-5 mt-4">
 
