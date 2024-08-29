@@ -1,5 +1,5 @@
 import React from 'react'
-import myPicture from '../../assets/img/profile-pic.png'
+import myPicture from '../../assets/img/profile-pic-4.png'
 import Navbar from '../../components/layout/Navbar'
 import Footer from '../../components/layout/Footer'
 import styles from './Home.module.css'
@@ -12,17 +12,17 @@ function Home() {
 
                 <Navbar />
 
-                <div class="container">
+                <div class="container pt-5 mt-4">
 
                     <div class="row flex-md-row flex-column-reverse">
 
                         <div class="col-md-7">
-                            <div class="pt-5 mt-3">
+                            <div>
                                 <h1 className='bold'>
                                     Innovative Full Stack Software Developer: Let's turn your ideas into reality.
                                 </h1>
 
-                                <h5 class="text-secondary py-4">
+                                <h5 class="text-secondary fw-400 py-4">
                                     Innovative software engineer with experience in many areas of computer science. I had worked on
                                     a large number of projects in mobile and web development. I am committed to working as a
                                     collaborative and positive team member, striving to utilize my knowledge and expertise for
@@ -30,17 +30,17 @@ function Home() {
                                 </h5>
 
                                 <div class="d-flex justify-content-center justify-content-md-start pt-4">
-                                    <a href="work.html" class="btn btn-primary rounded-large fw-500 px-5 py-2">View My Work</a>
+                                    <a href="work.html" class="btn btn-primary rounded-large fw-500 px-5 py-3">Contact me</a>
                                 </div>
 
                             </div>
 
                         </div>
 
-                        <div class="col-md-5 d-flex justify-content-center pt-5">
+                        <div class="col-md-5 d-flex justify-content-center align-items-center">
                             <div class="rounded-circle">
                                 <img src={myPicture} style={{ maxWidth: 350, height: 'fit-content' }}
-                                    class="img-fluid rounded-circle shadow-lg" alt="" id="my-picture" />
+                                    class="img-fluid" alt="" id="my-picture" />
                             </div>
                         </div>
 

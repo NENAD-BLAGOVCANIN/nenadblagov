@@ -1,12 +1,15 @@
-:root{
+:root {
   --color-primary: #4D81F1;
+  --color-primary-hover: #4879e0;
   --color-text: #1e1f21;
   --color-text-lighter: #4C4D4E;
   --color-body-background: #F9F8F8;
   --color-main-background: #fff;
+  --color-gray: #eaeaea;
+  --color-darker-gray: #d5d5d5;
 }
 
-.dark-mode{
+.dark-mode {
   --color-text: white;
   --color-text-lighter: #a5b0b9;
   --color-body-background: #080f25;
@@ -18,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--color-text) !important;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 400;
   font-style: normal;
 }
@@ -51,6 +54,19 @@ body {
 
 .bold {
   font-weight: bold !important;
+}
+
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.btn-primary:hover{
+  background-color: var(--color-primary-hover) !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
 }
 
 .fw-500 {
@@ -91,11 +107,11 @@ body {
 
 @media only screen and (max-width: 850px) {
   h2 {
-      text-align: center;
+    text-align: center;
   }
 
   .navbar-nav {
-      background-color: #101418 !important;
+    background-color: #101418 !important;
   }
 }
 
@@ -111,4 +127,48 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #a1a1a1;
   border-radius: 2rem
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: var(--color-gray);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: var(--color-darker-gray);
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.moon {
+	color: #0092d5 !important;
+}
+
+.sun {
+	color: #eeff00 !important;
 }
