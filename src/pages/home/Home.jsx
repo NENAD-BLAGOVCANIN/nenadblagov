@@ -2,48 +2,53 @@ import React from 'react'
 import myPicture from '../../assets/img/profile-pic.png'
 import Navbar from '../../components/layout/Navbar'
 import Footer from '../../components/layout/Footer'
+import styles from './Home.module.css'
 
 function Home() {
     return (
         <>
 
-            <Navbar />
+            <div className={styles.homeMainWrapper}>
 
-            <div class="container">
+                <Navbar />
 
-                <div class="row flex-md-row flex-column-reverse">
+                <div class="container">
 
-                    <div class="col-md-7">
-                        <div class="pt-5">
-                            <h1>
-                                Innovative Full Stack Software Developer: Let's turn your ideas into reality.
-                            </h1>
+                    <div class="row flex-md-row flex-column-reverse">
 
-                            <h5 class="text-secondary py-4">
-                                Innovative software engineer with experience in many areas of computer science. I had worked on
-                                a large number of projects in mobile and web development. I am committed to working as a
-                                collaborative and positive team member, striving to utilize my knowledge and expertise for
-                                optimal engineering results.
-                            </h5>
+                        <div class="col-md-7">
+                            <div class="pt-5 mt-3">
+                                <h1 className='bold'>
+                                    Innovative Full Stack Software Developer: Let's turn your ideas into reality.
+                                </h1>
 
-                            <div class="d-flex justify-content-center justify-content-md-start pt-4">
-                                <a href="work.html" class="btn btn-primary rounded-large fw-500 px-5 py-2">View My Work</a>
+                                <h5 class="text-secondary py-4">
+                                    Innovative software engineer with experience in many areas of computer science. I had worked on
+                                    a large number of projects in mobile and web development. I am committed to working as a
+                                    collaborative and positive team member, striving to utilize my knowledge and expertise for
+                                    optimal engineering results.
+                                </h5>
+
+                                <div class="d-flex justify-content-center justify-content-md-start pt-4">
+                                    <a href="work.html" class="btn btn-primary rounded-large fw-500 px-5 py-2">View My Work</a>
+                                </div>
+
                             </div>
 
                         </div>
 
-                    </div>
-
-                    <div class="col-md-5 d-flex justify-content-center pt-5">
-                        <div class="rounded-circle">
-                            <img src={myPicture} style={{ maxWidth: 350, height: 'fit-content' }}
-                                class="img-fluid rounded-circle shadow-lg" alt="" id="my-picture" />
+                        <div class="col-md-5 d-flex justify-content-center pt-5">
+                            <div class="rounded-circle">
+                                <img src={myPicture} style={{ maxWidth: 350, height: 'fit-content' }}
+                                    class="img-fluid rounded-circle shadow-lg" alt="" id="my-picture" />
+                            </div>
                         </div>
+
                     </div>
 
                 </div>
-
             </div>
+
 
 
             <div class="container py-4">
@@ -51,7 +56,7 @@ function Home() {
 
                 <div class="row tech-stack-list">
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Python</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -63,7 +68,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Django</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -75,7 +80,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Java</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -86,7 +91,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>PHP</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -98,7 +103,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>JavaScript</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -110,7 +115,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>C#</span><br />
                             <span class="txt-light">Experience level: Intermediate</span>
                             <div class="experience-level">
@@ -122,7 +127,7 @@ function Home() {
 
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Next.js</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -134,7 +139,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Laravel</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -146,7 +151,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Electron.JS</span><br />
                             <span class="txt-light">Experience level: Intermediate</span>
                             <div class="experience-level">
@@ -157,7 +162,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>React JS</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -169,7 +174,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>.NET Core</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -181,7 +186,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>MongoDB</span><br />
                             <span class="txt-light">Experience level: Intermediate</span>
                             <div class="experience-level">
@@ -193,7 +198,7 @@ function Home() {
 
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Angular</span><br />
                             <span class="txt-light">Experience level: Intermediate</span>
                             <div class="experience-level">
@@ -204,7 +209,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Livewire</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -216,7 +221,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>MySQL</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -228,7 +233,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Yii2</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -240,7 +245,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Flask</span><br />
                             <span class="txt-light">Experience level: Expert</span>
                             <div class="experience-level">
@@ -252,7 +257,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="col-md-4 col-6">
-                        <div class="rounded my-2 bg-dark rounded-lg p-3">
+                        <div class="card rounded my-2 rounded-lg p-3">
                             <span>Nuxt.js</span><br />
                             <span class="txt-light">Experience level: Intermediate</span>
                             <div class="experience-level">

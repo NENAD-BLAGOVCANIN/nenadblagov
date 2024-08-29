@@ -1,0 +1,26 @@
+@media only screen and (min-width: 850px) {
+    .homeMainWrapper {
+        background-image: url('../../assets/img/background.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.homeMainWrapper{
+    padding: 0 0 5rem 0;
+}
+
+@media only screen and (max-width: 850px) {
+    #my-picture {
+        max-width: 150px !important;
+    }
+}
+
+.company-logo {
+    max-width: 85px;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
