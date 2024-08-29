@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../assets/img/logo.png'
+import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
     return (
@@ -11,24 +12,24 @@ function Navbar() {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto justify-content-center">
                     <li>
-                        <a class="d-flex align-items-center h-100 logo-image-wrapper" href="/">
+                        <Link class="d-flex align-items-center h-100 logo-image-wrapper" to="/">
                             <img id="logo-image" src={logo} alt="" />
-                        </a>
+                        </Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">Home</a>
+                        <NavLink className="nav-link" to="/">Home</NavLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="work.html">My Work</a>
+                        <NavLink className="nav-link" to="/work">My Work</NavLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <NavLink className="nav-link" to="/contact">Contact</NavLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <NavLink className="nav-link" to="/about">About</NavLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cv.html">CV</a>
+                        <NavLink className="nav-link" to="/cv">CV</NavLink>
                     </li>
                 </ul>
             </div>
