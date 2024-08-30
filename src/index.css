@@ -30,6 +30,15 @@ body {
   color: var(--color-text) !important;
 }
 
+.main-content-wrapper{
+  padding-top: 82px;
+}
+
+.navbar{
+  z-index: 9;
+  background-color: var(--color-body-background);
+}
+
 .navbar .nav-link {
   font-size: 13pt;
   font-weight: 500;

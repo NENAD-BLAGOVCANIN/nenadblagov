@@ -5,7 +5,7 @@ import { MoonFill, SunFill } from 'react-bootstrap-icons'
 
 function Navbar({ darkMode, toggleDarkMode }) {
     return (
-        <nav className="navbar navbar-expand-lg bg-transparent justify-content-center">
+        <nav className="navbar shadow-sm w-100 position-fixed navbar-expand-lg justify-content-center">
             <button className="navbar-toggler btn bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon text-white"></span>
