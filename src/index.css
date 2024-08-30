@@ -202,3 +202,7 @@ body {
   border-radius: 50%;
   background: var(--bs-teal);
 }
+
+.bgc-success{
+  background-color: var(--bs-teal) !important;
+}
