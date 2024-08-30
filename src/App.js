@@ -36,8 +36,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<AppLayout />}>
-          <Route path="/" element={<Home darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
+        <Route path='/' element={<AppLayout darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}>
+          <Route index element={<Home />} />
           <Route path="/work" element={<Work />} />
         </Route>
       </Routes>

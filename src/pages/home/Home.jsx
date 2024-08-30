@@ -1,22 +1,22 @@
 import React from 'react'
 import myPicture from '../../assets/img/profile-pic-4.png'
-import Navbar from '../../components/layout/Navbar'
 import Footer from '../../components/layout/Footer'
 import styles from './Home.module.css'
+import TechStack from './TechStack'
+import WorkExperience from './WorkExperience'
 
-function Home({ darkMode, toggleDarkMode }) {
+
+function Home() {
     return (
         <>
 
             <div className={styles.homeMainWrapper}>
 
-                <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-
                 <div class="container pt-5 mt-4">
 
                     <div class="row flex-md-row flex-column-reverse">
 
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                             <div>
                                 <h1 className='bold'>
                                     Innovative Full Stack Software Developer: Let's turn your ideas into reality.
@@ -37,7 +37,7 @@ function Home({ darkMode, toggleDarkMode }) {
 
                         </div>
 
-                        <div class="col-md-5 d-flex justify-content-center align-items-center">
+                        <div class="col-md-6 d-flex justify-content-center">
                             <div class="rounded-circle">
                                 <img src={myPicture} style={{ maxWidth: 350, height: 'fit-content' }}
                                     class="img-fluid" alt="" id="my-picture" />
@@ -49,297 +49,10 @@ function Home({ darkMode, toggleDarkMode }) {
                 </div>
             </div>
 
-
-
             <div class="container py-4">
-                <h2 class="mt-4">Tech Stack</h2>
+                <TechStack />
+                <WorkExperience />
 
-                <div class="row tech-stack-list">
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Python</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Django</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Java</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>PHP</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>JavaScript</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>C#</span><br />
-                            <span class="txt-light">Experience level: Intermediate</span>
-                            <div class="experience-level">
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Next.js</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Laravel</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Electron.JS</span><br />
-                            <span class="txt-light">Experience level: Intermediate</span>
-                            <div class="experience-level">
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>React JS</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>.NET Core</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>MongoDB</span><br />
-                            <span class="txt-light">Experience level: Intermediate</span>
-                            <div class="experience-level">
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Angular</span><br />
-                            <span class="txt-light">Experience level: Intermediate</span>
-                            <div class="experience-level">
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Livewire</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>MySQL</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Yii2</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Flask</span><br />
-                            <span class="txt-light">Experience level: Expert</span>
-                            <div class="experience-level">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                        <div class="card rounded my-2 rounded-lg p-3">
-                            <span>Nuxt.js</span><br />
-                            <span class="txt-light">Experience level: Intermediate</span>
-                            <div class="experience-level">
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                                <div class="line bg-warning"></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="py-4">
-
-                    <h2 class="mt-5">Work experience</h2>
-
-                    <div class="py-3">
-                        <div class="row py-3">
-                            <span class="txt-light">2023 - 2024</span><br />
-                            <div class="col-md-11">
-                                <h4 class="fw-500">Multiverzum - Founder and CEO</h4>
-
-                                <span class="txt-light">
-                                    In 2023 I created a startup called Multiverzum.com which is an eCommerce platform where
-                                    anyone can sign up and start shopping and selling products. The platform
-                                    also has many other features that allow shop owners to promote their products and even their
-                                    physical store. I developed the website using Python Django and the mobile
-                                    app with React Native.
-                                </span>
-                            </div>
-                            <div class="col-md-1 d-flex justify-content-center align-items-center">
-                                <img class="company-logo" src="/assets/img/multiverzum.png" alt="" /><br />
-                            </div>
-                        </div>
-                        <div class="row py-3">
-                            <span class="txt-light">2022 - 2023</span><br />
-                            <div class="col-md-11">
-                                <h4 class="fw-500">Singularity Istocno Sarajevo - Full Stack Software Developer</h4>
-
-                                <span class="txt-light">
-                                    During my time at Singularity.is, I contributed to several high-profile projects that
-                                    required
-                                    strong problem-solving skills, attention to detail, and the ability to work collaboratively
-                                    with
-                                    cross-functional teams. For example, I was instrumental in developing a real-time chat
-                                    application
-                                    using React, Node.js, and Socket.io that allowed users to communicate with each other
-                                    seamlessly.
-                                </span>
-                            </div>
-                            <div class="col-md-1 d-flex justify-content-center align-items-center">
-                                <img class="company-logo" src="/assets/img/singularity.png" alt="" /><br />
-                            </div>
-                        </div>
-                        <div class="row py-3">
-                            <span class="txt-light">2023 - 2024</span><br />
-                            <div class="col-md-11">
-                                <h4 class="fw-500">Freelance on Fiverr and Upwork - Full Stack Software Development</h4>
-
-                                <span class="txt-light">
-                                    As a freelance full-stack web developer on Fiverr, I successfully collaborated with diverse
-                                    clients
-                                    to deliver tailored web solutions. Proficient in both front-end and back-end development, I
-                                    designed
-                                    and implemented responsive, user-friendly websites that met the unique requirements of each
-                                    project.
-                                    My responsibilities included understanding client needs, proposing technical solutions, and
-                                    delivering high-quality code within specified timelines. I honed my skills in
-                                    problem-solving,
-                                    communication, and adaptability while managing multiple projects simultaneously. This
-                                    experience not
-                                    only expanded my technical expertise but also enhanced my ability to thrive in a dynamic and
-                                    client-centric environment.
-                                </span>
-                            </div>
-                            <div class="col-md-1 d-flex justify-content-center align-items-center">
-                                <img class="company-logo" src="/assets/img/fiverr.png" alt="" /><br />
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <Footer />

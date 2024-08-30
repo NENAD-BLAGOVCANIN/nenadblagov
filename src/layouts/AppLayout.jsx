@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from '../components/layout/Navbar'
 import { Outlet } from 'react-router-dom'
 
-function AppLayout() {
+function AppLayout({darkMode, toggleDarkMode}) {
     return (
-        <Outlet />
+        <>
+            <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <Outlet />
+        </>
+
     )
 }
 
