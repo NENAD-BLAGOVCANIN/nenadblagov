@@ -1,4 +1,7 @@
 import React from 'react'
+import multiverzumLogo from '../../assets/img/multiverzum.png'
+import singularityLogo from '../../assets/img/singularity.png'
+import fiverrLogo from '../../assets/img/fiverr.png'
 
 function WorkExperience() {
     return (
@@ -10,27 +13,27 @@ function WorkExperience() {
                 <div class="py-3">
                     <div class="row py-3">
                         <span class="txt-light">2023 - 2024</span><br />
-                        <div class="col-md-11">
+                        <div class="col-md-10">
                             <h5 class="fw-500">Multiverzum - Founder and CEO</h5>
 
-                            <span class="txt-light text-justify">
+                            <p class="txt-light text-justify">
                                 In 2023 I created a startup called Multiverzum.com which is an eCommerce platform where
                                 anyone can sign up and start shopping and selling products. The platform
                                 also has many other features that allow shop owners to promote their products and even their
                                 physical store. I developed the website using Python Django and the mobile
                                 app with React Native.
-                            </span>
+                            </p>
                         </div>
-                        <div class="col-md-1 d-flex justify-content-center align-items-center">
-                            <img class="company-logo" src="/assets/img/multiverzum.png" alt="" /><br />
+                        <div class="col-md-2 d-flex justify-content-center align-items-center">
+                            <img class="company-logo" src={multiverzumLogo} alt="" /><br />
                         </div>
                     </div>
                     <div class="row py-3">
                         <span class="txt-light">2022 - 2023</span><br />
-                        <div class="col-md-11">
+                        <div class="col-md-10">
                             <h5 class="fw-500">Singularity Istocno Sarajevo - Full Stack Software Developer</h5>
 
-                            <span class="txt-light text-justify">
+                            <p class="txt-light text-justify">
                                 During my time at Singularity.is, I contributed to several high-profile projects that
                                 required
                                 strong problem-solving skills, attention to detail, and the ability to work collaboratively
@@ -39,18 +42,18 @@ function WorkExperience() {
                                 application
                                 using React, Node.js, and Socket.io that allowed users to communicate with each other
                                 seamlessly.
-                            </span>
+                            </p>
                         </div>
-                        <div class="col-md-1 d-flex justify-content-center align-items-center">
-                            <img class="company-logo" src="/assets/img/singularity.png" alt="" /><br />
+                        <div class="col-md-2 d-flex justify-content-center align-items-center">
+                            <img class="company-logo" src={singularityLogo} alt="" /><br />
                         </div>
                     </div>
                     <div class="row py-3">
                         <span class="txt-light">2023 - 2024</span><br />
-                        <div class="col-md-11">
+                        <div class="col-md-10">
                             <h5 class="fw-500">Freelance on Fiverr and Upwork - Full Stack Software Development</h5>
 
-                            <span class="txt-light text-justify">
+                            <p class="txt-light text-justify">
                                 As a freelance full-stack web developer on Fiverr, I successfully collaborated with diverse
                                 clients
                                 to deliver tailored web solutions. Proficient in both front-end and back-end development, I
@@ -64,10 +67,10 @@ function WorkExperience() {
                                 experience not
                                 only expanded my technical expertise but also enhanced my ability to thrive in a dynamic and
                                 client-centric environment.
-                            </span>
+                            </p>
                         </div>
-                        <div class="col-md-1 d-flex justify-content-center align-items-center">
-                            <img class="company-logo" src="/assets/img/fiverr.png" alt="" /><br />
+                        <div class="col-md-2 d-flex justify-content-center align-items-center">
+                            <img class="company-logo" src={fiverrLogo} alt="" /><br />
                         </div>
                     </div>
                 </div>

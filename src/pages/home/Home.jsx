@@ -29,8 +29,12 @@ function Home() {
                                     optimal engineering results.
                                 </h5>
 
-                                <div class="d-flex justify-content-center justify-content-md-start pt-4">
-                                    <a href="work.html" class="btn btn-primary rounded-large fw-500 px-5 py-3">Contact me</a>
+                                <div class="d-flex justify-content-center align-items-center justify-content-md-start pt-4">
+                                    <a href="/contact" class="btn btn-primary rounded-large fw-500 px-5 py-3">Contact me</a>
+                                    <div className='d-flex align-items-center px-3'>
+                                        <div className='online-status-badge'></div>
+                                        <span className='ps-2'>Currently available for work</span>
+                                    </div>
                                 </div>
 
                             </div>
@@ -50,6 +54,7 @@ function Home() {
             </div>
 
             <div class="container py-4">
+
                 <TechStack />
                 <WorkExperience />
 
