@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Work from './pages/work/Work';
 import AppLayout from './layouts/AppLayout';
+import Contact from './pages/contact/Contact';
+import About from './pages/about/About';
 
 function App() {
 
@@ -39,6 +41,8 @@ function App() {
         <Route path='/' element={<AppLayout darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}>
           <Route index element={<Home />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Route>
       </Routes>
     </Router>

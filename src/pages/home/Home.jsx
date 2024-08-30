@@ -1,5 +1,5 @@
 import React from 'react'
-import myPicture from '../../assets/img/profile-pic-4.png'
+import myPicture from '../../assets/img/profile-pic-4.webp'
 import Footer from '../../components/layout/Footer'
 import styles from './Home.module.css'
 import TechStack from './TechStack'
@@ -14,15 +14,15 @@ function Home() {
 
                 <div class="container pt-5 mt-4">
 
-                    <div class="row flex-md-row flex-column-reverse">
+                    <div class="row m-0 flex-md-row flex-column-reverse">
 
                         <div class="col-md-6">
                             <div>
-                                <h1 className='bold'>
+                                <h1 className='bold text-justify'>
                                     Innovative Full Stack Software Developer: Let's turn your ideas into reality.
                                 </h1>
 
-                                <h5 class="text-secondary fw-400 py-4">
+                                <h5 class="text-secondary text-justify fw-400 py-4">
                                     Innovative software engineer with experience in many areas of computer science. I had worked on
                                     a large number of projects in mobile and web development. I am committed to working as a
                                     collaborative and positive team member, striving to utilize my knowledge and expertise for
@@ -43,7 +43,7 @@ function Home() {
 
                         <div class="col-md-6 d-flex justify-content-center">
                             <div class="rounded-circle">
-                                <img src={myPicture} style={{ maxWidth: 350, height: 'fit-content' }}
+                                <img src={myPicture} style={{ maxWidth: 380, height: 'fit-content' }}
                                     class="img-fluid" alt="" id="my-picture" />
                             </div>
                         </div>
