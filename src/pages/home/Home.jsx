@@ -5,9 +5,12 @@ import styles from './Home.module.css'
 import TechStack from './TechStack'
 import WorkExperience from './WorkExperience'
 import { Link } from 'react-router-dom'
-
+import { useTranslation } from 'react-i18next'
 
 function Home() {
+
+    const { t } = useTranslation();
+
     return (
         <>
 
@@ -20,23 +23,20 @@ function Home() {
                         <div className="col-md-6">
                             <div>
                                 <h1 className='bold text-justify'>
-                                    Innovative Full Stack Software Developer: Let's turn your ideas into reality.
+                                    {t('heroSection.title')}
                                 </h1>
 
                                 <h5 className="text-secondary text-justify fw-400 py-4">
-                                    Innovative software engineer with experience in many areas of computer science. I had worked on
-                                    a large number of projects in mobile and web development. I am committed to working as a
-                                    collaborative and positive team member, striving to utilize my knowledge and expertise for
-                                    optimal engineering results.
+                                    {t('heroSection.description')}
                                 </h5>
 
                                 <div className="d-flex justify-content-center align-items-center justify-content-md-start pt-4">
                                     <Link to="/contact" className="btn btn-primary rounded-large fw-500 px-5 py-3">
-                                        Contact me
+                                        {t('heroSection.contactMe')}
                                     </Link>
                                     <div className='d-flex align-items-center px-3'>
                                         <div className='online-status-badge'></div>
-                                        <span className='ps-2'>Currently available for work</span>
+                                        <span className='ps-2'>{t('heroSection.availableForWork')}</span>
                                     </div>
                                 </div>
 
