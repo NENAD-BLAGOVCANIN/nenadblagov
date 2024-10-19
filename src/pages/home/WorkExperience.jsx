@@ -29,7 +29,7 @@ function WorkExperience() {
                 </div>
                 <hr />
                 <div className="row py-3">
-                    <span className="txt-light">2023 - 2024</span><br />
+                    <span className="txt-light">2022 - 2023</span><br />
                     <div className="col-md-10">
                         <h5 className="fw-500 mb-3">Emprium.au - Django Developer</h5>
 
@@ -47,7 +47,7 @@ function WorkExperience() {
                 </div>
                 <hr />
                 <div className="row py-3">
-                    <span className="txt-light">2022 - 2023</span><br />
+                    <span className="txt-light">2021 - 2022</span><br />
                     <div className="col-md-10">
                         <h5 className="fw-500 mb-3">Singularity Istocno Sarajevo - Full Stack Software Developer</h5>
 
@@ -68,7 +68,7 @@ function WorkExperience() {
                 </div>
                 <hr />
                 <div className="row py-3">
-                    <span className="txt-light">2023 - 2024</span><br />
+                    <span className="txt-light">2021 - 2024</span><br />
                     <div className="col-md-10">
                         <h5 className="fw-500 mb-3">Freelance on Fiverr and Upwork - Full Stack Software Development</h5>
 

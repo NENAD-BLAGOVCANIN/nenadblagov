@@ -214,3 +214,7 @@ body {
 hr{
   border-color: var(--color-darker-gray) !important;
 }
+
+.form-control{
+  padding: .7rem .6rem !important;
+}

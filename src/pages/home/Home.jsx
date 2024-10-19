@@ -4,6 +4,7 @@ import Footer from '../../components/layout/Footer'
 import styles from './Home.module.css'
 import TechStack from './TechStack'
 import WorkExperience from './WorkExperience'
+import { Link } from 'react-router-dom'
 
 
 function Home() {
@@ -30,7 +31,9 @@ function Home() {
                                 </h5>
 
                                 <div className="d-flex justify-content-center align-items-center justify-content-md-start pt-4">
-                                    <a href="/contact" className="btn btn-primary rounded-large fw-500 px-5 py-3">Contact me</a>
+                                    <Link to="/contact" className="btn btn-primary rounded-large fw-500 px-5 py-3">
+                                        Contact me
+                                    </Link>
                                     <div className='d-flex align-items-center px-3'>
                                         <div className='online-status-badge'></div>
                                         <span className='ps-2'>Currently available for work</span>
