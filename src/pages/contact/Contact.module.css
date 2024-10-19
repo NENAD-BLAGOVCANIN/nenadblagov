@@ -1,0 +1,25 @@
+@media only screen and (min-width: 850px) {
+    .contactPageWrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contactPageWrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../../assets/img/background.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* transform: rotate(180deg); */
+        z-index: -1;
+    }
+}
+
+.contactPageWrapper{
+    padding: 0 0 5rem 0;
+}
