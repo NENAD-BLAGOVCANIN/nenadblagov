@@ -1,8 +1,9 @@
 import React from 'react'
+import Footer from '../../components/layout/Footer'
 
 function About() {
     return (
-        <div className="container py-5">
+        <div className="container pt-5">
 
             <div className="row">
                 <div className="col-md-6">
@@ -49,6 +50,8 @@ function About() {
                         width="600" height="450" className='border-0' />
                 </div>
             </div>
+
+            <Footer />
 
         </div>
     )

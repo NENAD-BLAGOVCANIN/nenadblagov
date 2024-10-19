@@ -19,17 +19,20 @@ import GR8Img6 from '../../assets/img/projects/GR8CITYRP/gr8-3.png'
 
 
 import styles from './Work.module.css'
+import Footer from '../../components/layout/Footer'
 
 function Work() {
     return (
-        <div className="container py-5">
+        <div className="container pt-5">
 
             <div className="row mb-5 pb-5">
                 <div className="col-md-7 px-4">
                     <img src={CRMasterImg1} alt="" className="rounded shadow w-100" />
                 </div>
                 <div className="col-md-5 px-4">
-                    <h3 className='bold mb-0'>Big Business Engine</h3>
+                    <u>
+                        <a href='https://app.bigbusinessengine.com/' target='_blank' className='text-decoration-none h3 bold mb-0'>Big Business Engine</a>
+                    </u>
 
                     <div className='py-4 d-flex align-items-center flex-wrap w-100'>
                         <span className={styles.tag}>Business</span>
@@ -38,9 +41,9 @@ function Work() {
                     </div>
 
                     <p className={styles.projectDescription}>
-                        Blackbox Meats is a technology company that connects people with high-quality meats delivered fresh to wherever
-                        they are in a city. This is achieved by working with strategic partners that specialize in the beef industry.
-                        Our technology is revolutionizing the way consumers purchase high quality products.
+                        BigBusinessEngine is a productivity tool that can be used by businesses to manaage their projects and worker activities.
+                        It lets you manage tasks, workers, clients, products, expenses and much more. It even gives you your own calendar to track events,
+                        dashboard to view performance stats. You can set your availabilities, book calls and basically do everything you need for your project all in one place.
                     </p>
 
                     <div className='row'>
@@ -171,6 +174,8 @@ function Work() {
                 </div>
 
             </div>
+
+            <Footer />
 
         </div>
     )

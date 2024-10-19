@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin } from 'react-bootstrap-icons'
 function Footer() {
     return (
         <footer className="mt-5">
-            <div className="container">
+            <div className="container bg-transparent">
                 <div className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
                     <p className="col-md-4 mb-0 txt-light">Nenad Blagovčanin</p>
 
