@@ -218,3 +218,7 @@ hr{
 .form-control{
   padding: .7rem .6rem !important;
 }
+
+.dropdown-toggle::after {
+  display: none !important;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../assets/img/logo.png'
 import { Link, NavLink } from 'react-router-dom'
 import { MoonFill, SunFill } from 'react-bootstrap-icons'
+import LanguageSelector from '../LanguageSelector'
 
 function Navbar({ darkMode, toggleDarkMode }) {
     return (
@@ -36,22 +37,29 @@ function Navbar({ darkMode, toggleDarkMode }) {
                         </li>
                     </div>
 
-                    <div className="nav-item nav-link position-relative d-flex align-items-center">
-                        <div className="one-quarter" id="switch">
-                            <input 
-                                type="checkbox" 
-                                className="checkbox" 
-                                id="chk" 
-                                checked={darkMode} 
-                                onChange={toggleDarkMode} 
-                            />
-                            <label className="label" htmlFor="chk">
-                                <MoonFill className='moon' />
-                                <SunFill className='sun' />
-                                <div className="ball"></div>
-                            </label>
+
+                    <div className='d-flex align-items-center'>
+                        <div className="nav-item nav-link position-relative d-flex align-items-center">
+                            <div className="one-quarter" id="switch">
+                                <input
+                                    type="checkbox"
+                                    className="checkbox"
+                                    id="chk"
+                                    checked={darkMode}
+                                    onChange={toggleDarkMode}
+                                />
+                                <label className="label" htmlFor="chk">
+                                    <MoonFill className='moon' />
+                                    <SunFill className='sun' />
+                                    <div className="ball"></div>
+                                </label>
+                            </div>
                         </div>
+
+                        <LanguageSelector />
                     </div>
+
+
                 </ul>
             </div>
         </nav>
