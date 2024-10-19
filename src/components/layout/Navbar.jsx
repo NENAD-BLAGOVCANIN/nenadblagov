@@ -32,7 +32,7 @@ function Navbar({ darkMode, toggleDarkMode }) {
                             <NavLink className="nav-link" to="/about">About</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/cv">CV</NavLink>
+                            <a className="nav-link" href="/Nenad%20Blagovcanin.pdf">CV</a>
                         </li>
                     </div>
 
