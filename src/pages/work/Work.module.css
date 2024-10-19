@@ -1,0 +1,14 @@
+.projectDescription {
+    font-size: 13pt;
+    line-height: 1.8rem;
+}
+
+.tag{
+    background-color: var(--bs-teal);
+    padding: .5rem 1rem;
+    color: white;
+    border-radius: 1.5rem;
+    font-weight: 500;
+    font-size: 10.3pt;
+    margin-right: .5rem;
+}

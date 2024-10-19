@@ -7,6 +7,7 @@
   --color-main-background: #fff;
   --color-gray: #eaeaea;
   --color-darker-gray: #d5d5d5;
+  --color-success: #3ecf3e;
 }
 
 .dark-mode {
@@ -36,12 +37,11 @@ body {
 
 .navbar{
   z-index: 9;
-  background-color: var(--color-body-background);
+  background-color: var(--color-main-background);
 }
 
 .navbar .nav-link {
   font-size: 13pt;
-  font-weight: 500;
   padding: 20px !important;
   color: var(--color-text-lighter) !important;
 }
@@ -94,6 +94,10 @@ body {
   color: var(--color-text-lighter) !important;
 }
 
+.txt-success{
+  color: var(--color-success);
+}
+
 .tech-stack-list li {
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -111,7 +115,7 @@ body {
   width: 35px;
   margin-right: .5rem;
   border-radius: 1.3rem;
-  background-color: green;
+  background-color: var(--color-success);
 }
 
 @media only screen and (max-width: 850px) {
@@ -200,9 +204,13 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--bs-teal);
+  background: var(--color-success);
 }
 
 .bgc-success{
-  background-color: var(--bs-teal) !important;
+  background-color: var(--color-success) !important;
+}
+
+hr{
+  border-color: var(--color-darker-gray) !important;
 }

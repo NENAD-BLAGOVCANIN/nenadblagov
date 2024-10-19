@@ -1,4 +1,5 @@
 import React from 'react'
+import { Facebook, Instagram, Linkedin } from 'react-bootstrap-icons'
 
 function Footer() {
     return (
@@ -12,12 +13,22 @@ function Footer() {
                         <img src="/assets/img/logo.png" style={{ maxHeight: 45 }} className="h-100" alt="" />
                     </a>
 
-                    <ul className="nav col-md-4 justify-content-end">
-                        <li className="nav-item"><a href="/" className="nav-link px-2 txt-light">Home</a></li>
-                        <li className="nav-item"><a href="work.html" className="nav-link px-2 txt-light">My Work</a></li>
-                        <li className="nav-item"><a href="contact.html" className="nav-link px-2 txt-light">Contact</a></li>
-                        <li className="nav-item"><a href="about.html" className="nav-link px-2 txt-light">About</a></li>
-                        <li className="nav-item"><a href="cv.html" className="nav-link px-2 txt-light">CV</a></li>
+                    <ul className="nav col-md-4 justify-content-center">
+                        <li className="nav-item">
+                            <a href="https://www.instagram.com/nenadblagov/" className="nav-link px-2">
+                                <Instagram />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="https://www.facebook.com/profile.php?id=100082837047911" className="nav-link px-2">
+                                <Facebook />
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="https://www.linkedin.com/in/nenad-blagovcanin/" className="nav-link px-2">
+                                <Linkedin />
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
