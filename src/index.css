@@ -31,11 +31,11 @@ body {
   color: var(--color-text) !important;
 }
 
-.main-content-wrapper{
+.main-content-wrapper {
   padding-top: 82px;
 }
 
-.navbar{
+.navbar {
   z-index: 9;
   background-color: var(--color-main-background);
 }
@@ -94,7 +94,7 @@ body {
   color: var(--color-text-lighter) !important;
 }
 
-.txt-success{
+.txt-success {
   color: var(--color-success);
 }
 
@@ -192,33 +192,52 @@ body {
   color: var(--color-text) !important;
 }
 
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 
-.company-logo{
+.company-logo {
   width: 65px;
 }
 
-.online-status-badge{
+.online-status-badge {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: var(--color-success);
 }
 
-.bgc-success{
+.bgc-success {
   background-color: var(--color-success) !important;
 }
 
-hr{
+hr {
   border-color: var(--color-darker-gray) !important;
 }
 
-.form-control{
+.form-control {
   padding: .7rem .6rem !important;
 }
 
 .dropdown-toggle::after {
   display: none !important;
+}
+
+
+[data-rmiz-content="found"] img,
+[data-rmiz-content="found"] svg,
+[data-rmiz-content="found"] [role="img"],
+[data-rmiz-content="found"] [data-zoom] {
+  cursor: pointer !important;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  cursor: pointer !important;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.04);
 }

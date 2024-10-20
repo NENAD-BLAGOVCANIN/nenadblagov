@@ -16,10 +16,10 @@ import GR8Img3 from '../../assets/img/projects/GR8CITYRP/Snimak ekrana 2024-09-0
 import GR8Img4 from '../../assets/img/projects/GR8CITYRP/gr8-1.png'
 import GR8Img5 from '../../assets/img/projects/GR8CITYRP/gr8-2.png'
 import GR8Img6 from '../../assets/img/projects/GR8CITYRP/gr8-3.png'
-
-
 import styles from './Work.module.css'
+import Zoom from 'react-medium-image-zoom'
 import Footer from '../../components/layout/Footer'
+import 'react-medium-image-zoom/dist/styles.css';
 
 function Work() {
     return (
@@ -27,7 +27,8 @@ function Work() {
 
             <div className="row mb-5 pb-5">
                 <div className="col-md-7 px-4">
-                    <img src={CRMasterImg1} alt="" className="rounded shadow w-100" />
+                    <Zoom>
+                        <img src={CRMasterImg1} alt="" className="image rounded shadow w-100" /></Zoom>
                 </div>
                 <div className="col-md-5 px-4">
                     <u>
@@ -48,13 +49,19 @@ function Work() {
 
                     <div className='row'>
                         <div className="col-md-4 pt-3">
-                            <img src={CRMasterImg2} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={CRMasterImg2} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={CRMasterImg3} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={CRMasterImg3} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={CRMasterImg4} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={CRMasterImg4} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                     </div>
 
@@ -65,67 +72,76 @@ function Work() {
 
             <div className="row mt-5 pt-5 pb-5 mb-5">
                 <div className="col-md-5 px-4">
-                    <h3 className='bold mb-0'>Multichat</h3>
+                    <a href="https://multi-chat.io/" target="_blank" className='h3 bold mb-0'>Multichat</a>
 
                     <div className='py-4 d-flex align-items-center flex-wrap w-100'>
-                        <span className={styles.tag}>Business</span>
-                        <span className={styles.tag}>CRM</span>
+                        <span className={styles.tag}>Communication</span>
+                        <span className={styles.tag}>Social</span>
                     </div>
 
                     <p className={styles.projectDescription}>
-                        Blackbox Meats is a technology company that connects people with high-quality meats delivered fresh to wherever
-                        they are in a city. This is achieved by working with strategic partners that specialize in the beef industry.
-                        Our technology is revolutionizing the way consumers purchase high quality products.
+                        Multichat is a all-in-one messaging app which lets you integrate all your favourite messaging apps (Messenger, Discord, Telegram, WhatsApp...) all in one place. You can create multiple tabs with different accounts with a messaging app of your choosing.
                     </p>
 
                     <div className='row'>
                         <div className="col-md-4 pt-3">
-                            <img src={MultichatWebImg1} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={MultichatWebImg1} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={MultichatWebImg2} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={MultichatWebImg2} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={MultichatWebImg3} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={MultichatWebImg3} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                     </div>
 
                 </div>
 
                 <div className="col-md-7 px-4">
-                    <img src={MultichatWebImg2} alt="" className="rounded shadow w-100" />
+                    <Zoom>
+                        <img src={MultichatWebImg2} alt="" className="image rounded shadow w-100" /></Zoom>
                 </div>
 
             </div>
 
             <div className="row mt-5 pt-5 pb-5 mb-5">
                 <div className="col-md-7 px-4">
-                    <img src={VidakiImgThumbnail} alt="" className="rounded shadow w-100" />
+                    <Zoom>
+                        <img src={VidakiImgThumbnail} alt="" className="image rounded shadow w-100" /></Zoom>
                 </div>
                 <div className="col-md-5 px-4">
-                    <h3 className='bold mb-0'>Vidaki.com</h3>
+                    <a href='https://vidaki.com/' target='_blank' className='h3 bold mb-0'>Vidaki.com</a>
 
                     <div className='py-4 d-flex align-items-center flex-wrap w-100'>
-                        <span className={styles.tag}>Business</span>
-                        <span className={styles.tag}>CRM</span>
-                        <span className={styles.tag}>Project Management</span>
+                        <span className={styles.tag}>Classifieds</span>
+                        <span className={styles.tag}>eCommerce</span>
                     </div>
 
                     <p className={styles.projectDescription}>
-                        Blackbox Meats is a technology company that connects people with high-quality meats delivered fresh to wherever
-                        they are in a city. This is achieved by working with strategic partners that specialize in the beef industry.
-                        Our technology is revolutionizing the way consumers purchase high quality products.
+                        Vidaki.com is a classifieds website where people can promote or buy all sorts of products or services. Similar concept to Craigslist. Platform was built with PHP Laravel. Currently unfinished but still up and running last I checked.
                     </p>
 
                     <div className='row'>
                         <div className="col-md-4 pt-3">
-                            <img src={VidakiImg1} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={VidakiImg1} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={VidakiImg2} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={VidakiImg2} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={VidakiImg3} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={VidakiImg3} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                     </div>
 
@@ -136,7 +152,7 @@ function Work() {
 
             <div className="row mt-5 pt-5 pb-5 mb-5">
                 <div className="col-md-5 px-4">
-                    <h3 className='bold mb-0'>GR8 City RP</h3>
+                    <a href='https://gr8cityrp.com/' target='_blank' className='h3 bold mb-0'>GR8 City RP</a>
 
                     <div className='py-4 d-flex align-items-center flex-wrap w-100'>
                         <span className={styles.tag}>Gaming</span>
@@ -144,33 +160,44 @@ function Work() {
                     </div>
 
                     <p className={styles.projectDescription}>
-                        Blackbox Meats is a technology company that connects people with high-quality meats delivered fresh to wherever
-                        they are in a city. This is achieved by working with strategic partners that specialize in the beef industry.
-                        Our technology is revolutionizing the way consumers purchase high quality products.
+                        A website for a role play gaming community where they have applications which people can fill and if the application is approved, the user gets access to a particular part of their gaming community, servers, privileges etc...
+                        <br /> <br />
+                        Website includes an admin panel, 2 communities which you can switch between, a dashboard, authentication pages, multiple roles (community admin, website admin...)
                     </p>
 
                     <div className='row'>
                         <div className="col-md-4 pt-3">
-                            <img src={GR8Img2} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={GR8Img2} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={GR8Img3} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={GR8Img3} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={GR8Img4} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={GR8Img4} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={GR8Img5} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={GR8Img5} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
-                            <img src={GR8Img6} alt="" className="rounded shadow-sm w-100" />
+                            <Zoom>
+                                <img src={GR8Img6} alt="" className="image rounded shadow-sm w-100" />
+                            </Zoom>
                         </div>
                     </div>
 
                 </div>
 
                 <div className="col-md-7 px-4">
-                    <img src={GR8Img1} alt="" className="rounded shadow w-100" />
+                    <Zoom>
+                        <img src={GR8Img1} alt="" className="image rounded shadow w-100" /></Zoom>
                 </div>
 
             </div>
