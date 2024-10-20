@@ -42,7 +42,7 @@ i18n
           },
           contact: {
             headline: "Let's work together!",
-            subtext: "Feel free to contact me and I'll reply very soon",
+            subtext: "Feel free to contact me and I'll reply very soon.",
             name: "Name",
             email: "Email",
             message: "Message",
@@ -59,7 +59,7 @@ i18n
             about: "O meni",
           },
           heroSection: {
-            title: "Inovativni Full Stack Softverski Developer: Pretvorimo vaše ideje u stvarnost.",
+            title: "Inovativni Full Stack Softverski Developer: Pretvorimo Vaše ideje u stvarnost.",
             description: "Inovativni softverski inženjer sa iskustvom u mnogim oblastima računarskih nauka. Radio sam na velikom broju projekata u mobilnom i veb razvoju. Posvećen sam radu kao kooperativan i pozitivan član tima, težići da iskoristim svoje znanje i stručnost za optimalne inženjerske rezultate.",
             contactMe: "Kontaktirajte me",
             availableForWork: "Trenutno dostupan za rad"
@@ -80,7 +80,7 @@ i18n
           },
           contact: {
             headline: "Hajde da radimo zajedno!",
-            subtext: "Slobodno me kontaktirajte, odgovoriću uskoro",
+            subtext: "Slobodno me kontaktirajte, odgovoriću uskoro.",
             name: "Ime",
             email: "Email",
             message: "Poruka",
