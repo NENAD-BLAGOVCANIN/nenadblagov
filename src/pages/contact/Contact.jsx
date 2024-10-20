@@ -1,8 +1,12 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css'
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+
+    const { t } = useTranslation();
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -27,16 +31,16 @@ function Contact() {
             <div className="pt-5 mt-4 d-flex justify-content-center">
 
                 <div className='shadow rounded-large bg-white p-5 w-100' style={{ maxWidth: 750 }}>
-                    <h2 className='bold mb-3'>Let's work together!</h2>
-                    <p>Feel free to contact me and I'll reply very soon</p>
+                    <h2 className='bold mb-3'>{t('contact.headline')}</h2>
+                    <p>{t('contact.subtext')}</p>
 
                     <form ref={form} onSubmit={sendEmail}>
-                        <label className='mt-4 mb-1 ms-1 fw-500'>Name <span className='text-danger'>*</span> </label>
-                        <input className='form-control' placeholder='Name' type="text" name="user_name" />
-                        <label className='mt-4 mb-1 ms-1 fw-500'>Email <span className='text-danger'>*</span> </label>
-                        <input className='form-control' placeholder='Email' type="email" name="user_email" />
-                        <label className='mt-4 mb-1 ms-1 fw-500'>Message <span className='text-danger'>*</span> </label>
-                        <textarea name="message" className='form-control' placeholder='Write your message...' />
+                        <label className='mt-4 mb-1 ms-1 fw-500'>{t('contact.name')} <span className='text-danger'>*</span> </label>
+                        <input className='form-control' placeholder={t('contact.name')} type="text" name="user_name" />
+                        <label className='mt-4 mb-1 ms-1 fw-500'>{t('contact.email')} <span className='text-danger'>*</span> </label>
+                        <input className='form-control' placeholder={t('contact.email')} type="email" name="user_email" />
+                        <label className='mt-4 mb-1 ms-1 fw-500'>{t('contact.message')} <span className='text-danger'>*</span> </label>
+                        <textarea name="message" className='form-control' placeholder={t('contact.messagePlaceholder')} />
                         <button className='btn btn-primary rounded w-100 mt-3 bold' style={{ padding: '.7rem .6rem' }} type="submit">Submit</button>
                     </form>
                 </div>
