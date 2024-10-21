@@ -24,7 +24,8 @@ i18n
             title: "Innovative Full Stack Software Developer: Let's turn your ideas into reality.",
             description: "Innovative software engineer with experience in many areas of computer science. I had worked on a large number of projects in mobile and web development. I am committed to working as a collaborative and positive team member, striving to utilize my knowledge and expertise for optimal engineering results.",
             contactMe: "Contact me",
-            availableForWork: "Currently available for work"
+            bookACall: "Book a call",
+            availableForWork: "Available for work"
           },
           techStack: {
             headline: "Tech Stack",

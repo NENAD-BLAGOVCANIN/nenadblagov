@@ -82,7 +82,7 @@ body {
   font-weight: 500 !important;
 }
 
-.text-main{
+.text-main {
   color: var(--color-text) !important;
 }
 
@@ -204,11 +204,63 @@ body {
   width: 65px;
 }
 
-.online-status-badge {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--color-success);
+
+@keyframes opacity-animation {
+	0% {
+		opacity: 0
+	}
+}
+
+@keyframes pulse-animation {
+	0% {
+		transform: translate(-50%, -50%) scale(0);
+		opacity: .8
+	}
+	70% {
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(3)
+	}
+	to {
+		transform: translate(-50%, -50%) scale(0);
+		opacity: 0
+	}
+}
+
+.pulse:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: #f9e9a2;
+    border-radius: 100%;
+    opacity: .5;
+    transform: translate(-50%,-50%) scale(3);
+    animation: pulse-animation 1.5s infinite;
+}
+
+.pulse {
+    position: relative;
+    display: inline-block;
+    vertical-align: 1px;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    background: #ffdd40;
+    color: transparent;
+    border-radius: 100%;
+    flex: 0 0 auto;
+    animation: opacity-animation .3s linear;
+  &.red {
+    background: #e60000;
+  }
+  &.orange {
+    background: #ff9900;
+  }
+  &.green {
+    background: #00e600;
+  }
 }
 
 .bgc-success {

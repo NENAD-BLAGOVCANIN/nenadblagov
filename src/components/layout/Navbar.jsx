@@ -17,11 +17,13 @@ function Navbar({ darkMode, toggleDarkMode }) {
             </button>
             <div className="collapse navbar-collapse">
                 <ul className="container navbar-nav m-auto justify-content-between w-100">
-                    <li>
-                        <Link className="d-flex align-items-center h-100 logo-image-wrapper" to="/">
-                            <img id="logo-image" src={logo} alt="Logo" />
-                        </Link>
-                    </li>
+
+                    <div className='d-flex px-3'>
+                        <div className='d-flex align-items-center'>
+                            <i class="pulse green"></i>
+                            <span className='ps-2'>{t('heroSection.availableForWork')}</span>
+                        </div>
+                    </div>
 
                     <div className='navbar-nav'>
                         <li className="nav-item">
