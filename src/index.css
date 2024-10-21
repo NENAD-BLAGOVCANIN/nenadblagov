@@ -82,6 +82,10 @@ body {
   font-weight: 500 !important;
 }
 
+.text-main{
+  color: var(--color-text) !important;
+}
+
 .text-secondary {
   color: rgb(101, 105, 110) !important;
 }

@@ -87,6 +87,82 @@ i18n
             messagePlaceholder: "Napišite vašu poruku..."
           }
         }
+      },
+      de: {
+        "translation": {
+          "header": {
+            "home": "Startseite",
+            "myWork": "Meine Arbeit",
+            "contact": "Kontakt",
+            "about": "Über mich"
+          },
+          "heroSection": {
+            "title": "Innovativer Full Stack Softwareentwickler: Lassen Sie uns Ihre Ideen in die Realität umsetzen.",
+            "description": "Innovativer Softwareentwickler mit Erfahrung in vielen Bereichen der Informatik. Ich habe an einer Vielzahl von Projekten in der mobilen und Web-Entwicklung gearbeitet. Ich bin bestrebt, als kooperatives und positives Teammitglied zu arbeiten und mein Wissen und meine Expertise für optimale technische Ergebnisse einzusetzen.",
+            "contactMe": "Kontaktieren Sie mich",
+            "availableForWork": "Derzeit verfügbar für Arbeit"
+          },
+          "techStack": {
+            "headline": "Technologiestack",
+            "experienceLevel": "Erfahrungslevel",
+            "expert": "Experte",
+            "intermediate": "Mittelstufe"
+          },
+          "workExperience": {
+            "headline": "Berufserfahrung",
+            "nexyoWorkDescriptionPart1": "2024 arbeitete ich als Full Stack Softwareentwickler für ein Unternehmen namens Nexyo.ag und mit deren Partner Beebucket. Ich baute ihre Frontend-Anwendung mit ReactJS und arbeitete mit ElasticSearch als Backend. Ich implementierte Such- und Filterfunktionen im Projekt.",
+            "nexyoWorkDescriptionPart2": "Ich hatte eine sehr gute Zeit mit diesen Leuten, und mit ihrer Erlaubnis werde ich möglicherweise den Link zum Projekt in Zukunft teilen.",
+            "empriumWorkDescription": "2023 arbeitete ich als Django-Entwickler für ein Unternehmen namens Emprium. Ich baute ihre Anwendung in einer Docker-Umgebung unter Verwendung von Django. In diesem Projekt arbeitete ich hauptsächlich am Frontend und erstellte und gestaltete alle ihre Seiten und Widgets.",
+            "singularityWorkDescription": "Während meiner Zeit bei Singularity.is trug ich zu mehreren hochkarätigen Projekten bei, die starke Problemlösungsfähigkeiten, Detailgenauigkeit und die Fähigkeit zur Zusammenarbeit in funktionsübergreifenden Teams erforderten. Beispielsweise war ich maßgeblich an der Entwicklung einer Echtzeit-Chat-Anwendung mit React, Node.js und Socket.io beteiligt, die es den Benutzern ermöglichte, nahtlos miteinander zu kommunizieren.",
+            "freelanceWorkDescription": "Als freiberuflicher Full-Stack-Webentwickler auf Fiverr habe ich erfolgreich mit verschiedenen Kunden zusammengearbeitet, um maßgeschneiderte Weblösungen zu liefern. Versiert in der Frontend- und Backend-Entwicklung, entwarf und implementierte ich responsive, benutzerfreundliche Websites, die den einzigartigen Anforderungen jedes Projekts gerecht wurden. Meine Aufgaben bestanden darin, die Bedürfnisse der Kunden zu verstehen, technische Lösungen vorzuschlagen und hochwertigen Code innerhalb der vorgegebenen Zeiträume zu liefern. Diese Erfahrungen erweiterten nicht nur meine technische Expertise, sondern verbesserten auch meine Fähigkeit, in einer dynamischen und kundenorientierten Umgebung erfolgreich zu sein."
+          },
+          "contact": {
+            "headline": "Lassen Sie uns zusammenarbeiten!",
+            "subtext": "Fühlen Sie sich frei, mich zu kontaktieren und ich werde bald antworten.",
+            "name": "Name",
+            "email": "E-Mail",
+            "message": "Nachricht",
+            "messagePlaceholder": "Schreiben Sie Ihre Nachricht..."
+          }
+        }
+      },
+      it: {
+        "translation": {
+          "header": {
+            "home": "Home",
+            "myWork": "Il mio lavoro",
+            "contact": "Contatto",
+            "about": "Chi sono"
+          },
+          "heroSection": {
+            "title": "Sviluppatore Software Full Stack Innovativo: Trasformiamo le tue idee in realtà.",
+            "description": "Sviluppatore software innovativo con esperienza in molte aree dell'informatica. Ho lavorato su un gran numero di progetti nello sviluppo web e mobile. Sono impegnato a lavorare come membro collaborativo e positivo del team, cercando di utilizzare le mie conoscenze ed esperienze per ottenere i migliori risultati ingegneristici.",
+            "contactMe": "Contattami",
+            "availableForWork": "Attualmente disponibile per lavoro"
+          },
+          "techStack": {
+            "headline": "Tecnologie",
+            "experienceLevel": "Livello di esperienza",
+            "expert": "Esperto",
+            "intermediate": "Intermedio"
+          },
+          "workExperience": {
+            "headline": "Esperienze di lavoro",
+            "nexyoWorkDescriptionPart1": "Nel 2024 ho lavorato come sviluppatore software full stack per un'azienda chiamata Nexyo.ag e con i loro partner Beebucket. Ho sviluppato la loro applicazione frontend utilizzando ReactJS e ho lavorato con ElasticSearch come backend. Ho implementato funzionalità di ricerca e filtro nel progetto.",
+            "nexyoWorkDescriptionPart2": "Mi sono trovato molto bene a lavorare con loro, e con il loro permesso potrei condividere il link al progetto in futuro.",
+            "empriumWorkDescription": "Nel 2023 ho lavorato come sviluppatore Django per un'azienda chiamata Emprium. Ho sviluppato la loro applicazione utilizzando Django in un ambiente dockerizzato. In questo progetto ho lavorato principalmente al frontend e ho costruito e stilizzato tutte le loro pagine e widget.",
+            "singularityWorkDescription": "Durante la mia esperienza in Singularity.is, ho contribuito a diversi progetti di alto profilo che richiedevano forti capacità di problem-solving, attenzione ai dettagli e la capacità di lavorare in team multidisciplinari. Ad esempio, sono stato fondamentale nello sviluppo di un'applicazione di chat in tempo reale utilizzando React, Node.js e Socket.io, che ha permesso agli utenti di comunicare tra loro senza interruzioni.",
+            "freelanceWorkDescription": "Come sviluppatore web full-stack freelance su Fiverr, ho collaborato con successo con clienti diversi per fornire soluzioni web personalizzate. Esperto nello sviluppo sia frontend che backend, ho progettato e implementato siti web responsive e user-friendly che soddisfavano i requisiti unici di ogni progetto. Le mie responsabilità includevano comprendere le esigenze del cliente, proporre soluzioni tecniche e consegnare codice di alta qualità nei tempi prestabiliti. Questa esperienza non solo ha ampliato la mia esperienza tecnica, ma ha anche migliorato la mia capacità di eccellere in un ambiente dinamico e orientato al cliente."
+          },
+          "contact": {
+            "headline": "Lavoriamo insieme!",
+            "subtext": "Sentiti libero di contattarmi e ti risponderò presto.",
+            "name": "Nome",
+            "email": "Email",
+            "message": "Messaggio",
+            "messagePlaceholder": "Scrivi il tuo messaggio..."
+          }
+        }
       }
     }
   });

@@ -30,7 +30,7 @@ function Contact() {
         <div className={styles.contactPageWrapper}>
             <div className="pt-5 mt-4 d-flex justify-content-center">
 
-                <div className='shadow rounded-large bg-white p-5 w-100' style={{ maxWidth: 750 }}>
+                <div className='shadow rounded-large card p-5 w-100' style={{ maxWidth: 750 }}>
                     <h2 className='bold mb-3'>{t('contact.headline')}</h2>
                     <p>{t('contact.subtext')}</p>
 
@@ -41,7 +41,7 @@ function Contact() {
                         <input className='form-control' placeholder={t('contact.email')} type="email" name="user_email" />
                         <label className='mt-4 mb-1 ms-1 fw-500'>{t('contact.message')} <span className='text-danger'>*</span> </label>
                         <textarea name="message" className='form-control' placeholder={t('contact.messagePlaceholder')} />
-                        <button className='btn btn-primary rounded w-100 mt-3 bold' style={{ padding: '.7rem .6rem' }} type="submit">Submit</button>
+                        <button className='btn btn-primary rounded w-100 mt-5 bold' style={{ padding: '.7rem .6rem' }} type="submit">Submit</button>
                     </form>
                 </div>
             </div>
