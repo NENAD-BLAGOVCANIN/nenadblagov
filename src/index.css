@@ -82,11 +82,11 @@ body {
   font-weight: 500 !important;
 }
 
-.text-main {
+.txt-main {
   color: var(--color-text) !important;
 }
 
-.text-secondary {
+.txt-secondary {
   color: rgb(101, 105, 110) !important;
 }
 

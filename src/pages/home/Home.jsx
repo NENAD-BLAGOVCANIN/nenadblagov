@@ -24,12 +24,11 @@ function Home() {
 
                         <div className="col-md-6">
                             <div>
-
-                                <h1 className='bold text-justify'>
+                                <h1 className='bold text-justify pt-4 pt-xs-0'>
                                     {t('heroSection.title')}
                                 </h1>
 
-                                <h5 className="text-secondary text-justify fw-400 py-4">
+                                <h5 className="txt-secondary text-justify fw-400 py-4">
                                     {t('heroSection.description')}
                                 </h5>
 

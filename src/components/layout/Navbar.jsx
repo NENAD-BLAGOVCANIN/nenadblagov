@@ -4,22 +4,22 @@ import { Link, NavLink } from 'react-router-dom'
 import { MoonFill, SunFill } from 'react-bootstrap-icons'
 import LanguageSelector from '../LanguageSelector'
 import { useTranslation } from 'react-i18next'
+import { Navbar as ReactNavbar, Container, NavDropdown, Nav, Dropdown } from "react-bootstrap";
 
 function Navbar({ darkMode, toggleDarkMode }) {
 
     const { t } = useTranslation();
 
     return (
-        <nav className="navbar shadow-sm w-100 position-fixed navbar-expand-lg justify-content-center">
-            <button class="navbar-toggler"
-                type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+        <ReactNavbar
+            sticky="top"
+            id="navbar"
+            expand="lg"
+            className="navbar shadow-sm w-100 position-fixed navbar-expand-lg justify-content-start justify-content-lg-center"
+            collapseOnSelect={true}>
+            <ReactNavbar.Toggle className='bg-white mx-4' aria-controls="basic-navbar-nav" />
+
+            <ReactNavbar.Collapse id="basic-navbar-nav">
                 <ul className="container navbar-nav m-auto justify-content-between w-100">
 
                     <div className='d-flex px-3'>
@@ -71,8 +71,8 @@ function Navbar({ darkMode, toggleDarkMode }) {
 
 
                 </ul>
-            </div>
-        </nav>
+            </ReactNavbar.Collapse>
+        </ReactNavbar>
     )
 }
 

@@ -15,7 +15,7 @@ function LanguageSelector() {
 
     return (
         <Dropdown className="ps-3">
-            <Dropdown.Toggle variant="basic" className='bg-transparent text-main' id="language-dropdown">
+            <Dropdown.Toggle variant="basic" className='bg-transparent txt-main' id="language-dropdown">
                 {lngs[i18n.language]?.nativeName || i18n.language} <ChevronDown />
             </Dropdown.Toggle>
 

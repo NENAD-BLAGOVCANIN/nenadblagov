@@ -35,7 +35,7 @@ function Work() {
                         <a href='https://app.bigbusinessengine.com/' target='_blank' className='text-decoration-none h3 bold mb-0'>Big Business Engine</a>
                     </u>
 
-                    <div className='py-4 d-flex align-items-center flex-wrap w-100'>
+                    <div className='pb-4 d-flex align-items-center flex-wrap w-100'>
                         <span className={styles.tag}>Business</span>
                         <span className={styles.tag}>CRM</span>
                         <span className={styles.tag}>Project Management</span>
@@ -74,7 +74,7 @@ function Work() {
                 <div className="col-md-5 px-4">
                     <a href="https://multi-chat.io/" target="_blank" className='h3 bold mb-0'>Multichat</a>
 
-                    <div className='py-4 d-flex align-items-center flex-wrap w-100'>
+                    <div className='pb-4 d-flex align-items-center flex-wrap w-100'>
                         <span className={styles.tag}>Communication</span>
                         <span className={styles.tag}>Social</span>
                     </div>
@@ -118,7 +118,7 @@ function Work() {
                 <div className="col-md-5 px-4">
                     <a href='https://vidaki.com/' target='_blank' className='h3 bold mb-0'>Vidaki.com</a>
 
-                    <div className='py-4 d-flex align-items-center flex-wrap w-100'>
+                    <div className='pb-4 d-flex align-items-center flex-wrap w-100'>
                         <span className={styles.tag}>Classifieds</span>
                         <span className={styles.tag}>eCommerce</span>
                     </div>
@@ -154,7 +154,7 @@ function Work() {
                 <div className="col-md-5 px-4">
                     <a href='https://gr8cityrp.com/' target='_blank' className='h3 bold mb-0'>GR8 City RP</a>
 
-                    <div className='py-4 d-flex align-items-center flex-wrap w-100'>
+                    <div className='pb-4 d-flex align-items-center flex-wrap w-100'>
                         <span className={styles.tag}>Gaming</span>
                         <span className={styles.tag}>Community</span>
                     </div>
