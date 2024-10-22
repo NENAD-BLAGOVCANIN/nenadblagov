@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import CRMasterImg1 from '../../assets/img/projects/CRMaster/1.png'
 import CRMasterImg2 from '../../assets/img/projects/CRMaster/2.png'
 import CRMasterImg3 from '../../assets/img/projects/CRMaster/3.png'
@@ -20,8 +20,30 @@ import styles from './Work.module.css'
 import Zoom from 'react-medium-image-zoom'
 import Footer from '../../components/layout/Footer'
 import 'react-medium-image-zoom/dist/styles.css';
+import { Spinner } from 'react-bootstrap';
 
 function Work() {
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if(loading) {
+        return (
+            <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '90vh' }}>
+                <Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
+        );
+    }
+
     return (
         <div className="container pt-5">
 
