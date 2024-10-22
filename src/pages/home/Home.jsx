@@ -7,6 +7,7 @@ import WorkExperience from './WorkExperience'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { CameraVideo, CameraVideoFill, ChatFill, Phone } from 'react-bootstrap-icons'
+import WhatIDo from './WhatIDo'
 
 function Home() {
 
@@ -62,6 +63,7 @@ function Home() {
 
             <div className="container py-4">
 
+                <WhatIDo />
                 <TechStack />
                 <WorkExperience />
 

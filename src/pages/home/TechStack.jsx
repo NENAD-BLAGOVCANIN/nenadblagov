@@ -7,7 +7,7 @@ function TechStack() {
 
     return (
         <>
-            <h2 className="mt-4">{t('techStack.headline')}</h2>
+            <h1 className="my-5 text-center bold pt-5">{t('techStack.headline')}</h1>
 
             <div className="row tech-stack-list">
                 <div className="col-md-4 col-6">
