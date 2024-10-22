@@ -33,15 +33,20 @@ function Home() {
                                     {t('heroSection.description')}
                                 </h5>
 
-                                <div className="d-flex justify-content-center align-items-center justify-content-md-start pt-4">
-                                    <Link to="/contact" className="btn btn-primary d-flex align-items-center rounded-large fw-500 px-5 py-3">
-                                        <ChatFill className='me-2' /> {t('heroSection.contactMe')}
-                                    </Link>
-                                    <span className='px-3'>or</span>
-                                    <a href='https://calendly.com/nenad-multiverzum/introduction-call' className="btn btn-danger d-flex align-items-center rounded-large fw-500 px-5 py-3">
-                                        <CameraVideoFill className='me-2' /> {t('heroSection.bookACall')}
-                                    </a>
-
+                                <div className="row pt-4" style={{ maxWidth: 580 }}>
+                                    <div className="col-md-5 d-flex align-items-center justify-content-center">
+                                        <Link to="/contact" className="btn btn-primary d-flex align-items-center rounded-large fw-500 px-5 py-3">
+                                            <ChatFill className='me-2' /> {t('heroSection.contactMe')}
+                                        </Link>
+                                    </div>
+                                    <div className="col-md-1 d-flex align-items-center justify-content-center">
+                                        <span className='px-3 py-2'>or</span>
+                                    </div>
+                                    <div className="col-md-5 d-flex align-items-center justify-content-center">
+                                        <a href='https://calendly.com/nenad-multiverzum/introduction-call' className="btn btn-danger d-flex align-items-center rounded-large fw-500 px-5 py-3">
+                                            <CameraVideoFill className='me-2' /> {t('heroSection.bookACall')}
+                                        </a>
+                                    </div>
 
                                 </div>
 

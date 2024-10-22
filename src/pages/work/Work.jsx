@@ -28,7 +28,7 @@ function Work() {
             <div className="row mb-5 pb-5">
                 <div className="col-md-7 px-4">
                     <Zoom>
-                        <img src={CRMasterImg1} alt="" className="image rounded shadow w-100" /></Zoom>
+                        <img src={CRMasterImg1} alt="" className="image rounded shadow w-100" loading='lazy' /></Zoom>
                 </div>
                 <div className="col-md-5 px-4">
                     <u>
@@ -50,17 +50,17 @@ function Work() {
                     <div className='row'>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={CRMasterImg2} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={CRMasterImg2} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={CRMasterImg3} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={CRMasterImg3} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={CRMasterImg4} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={CRMasterImg4} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                     </div>
@@ -86,17 +86,17 @@ function Work() {
                     <div className='row'>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={MultichatWebImg1} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={MultichatWebImg1} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={MultichatWebImg2} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={MultichatWebImg2} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={MultichatWebImg3} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={MultichatWebImg3} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ function Work() {
 
                 <div className="col-md-7 px-4">
                     <Zoom>
-                        <img src={MultichatWebImg2} alt="" className="image rounded shadow w-100" /></Zoom>
+                        <img src={MultichatWebImg2} alt="" className="image rounded shadow w-100" loading='lazy' /></Zoom>
                 </div>
 
             </div>
@@ -113,7 +113,7 @@ function Work() {
             <div className="row mt-5 pt-5 pb-5 mb-5">
                 <div className="col-md-7 px-4">
                     <Zoom>
-                        <img src={VidakiImgThumbnail} alt="" className="image rounded shadow w-100" /></Zoom>
+                        <img src={VidakiImgThumbnail} alt="" className="image rounded shadow w-100" loading='lazy' /></Zoom>
                 </div>
                 <div className="col-md-5 px-4">
                     <a href='https://vidaki.com/' target='_blank' className='h3 bold mb-0'>Vidaki.com</a>
@@ -130,17 +130,17 @@ function Work() {
                     <div className='row'>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={VidakiImg1} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={VidakiImg1} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={VidakiImg2} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={VidakiImg2} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={VidakiImg3} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={VidakiImg3} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                     </div>
@@ -168,27 +168,27 @@ function Work() {
                     <div className='row'>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={GR8Img2} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={GR8Img2} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={GR8Img3} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={GR8Img3} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={GR8Img4} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={GR8Img4} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={GR8Img5} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={GR8Img5} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                         <div className="col-md-4 pt-3">
                             <Zoom>
-                                <img src={GR8Img6} alt="" className="image rounded shadow-sm w-100" />
+                                <img src={GR8Img6} alt="" className="image rounded shadow-sm w-100" loading='lazy' />
                             </Zoom>
                         </div>
                     </div>
@@ -197,7 +197,7 @@ function Work() {
 
                 <div className="col-md-7 px-4">
                     <Zoom>
-                        <img src={GR8Img1} alt="" className="image rounded shadow w-100" /></Zoom>
+                        <img src={GR8Img1} alt="" className="image rounded shadow w-100" loading='lazy' /></Zoom>
                 </div>
 
             </div>
